@@ -36,8 +36,12 @@ class nowe {
                 case "prostokat":
                     System.out.println("Podaj dlugosc bokow (a;b): ");
                     String prost = sc.next();
-                    String rozmiar[] = prost.split(";");
-                    //System.out.println(rozmiar[0]+" "+rozmiar[1]);
+
+                    String rozmiar[] = prost.split(";");                
+                    
+                    
+                    System.out.println(rozmiar[0]+" "+rozmiar[1]);
+
             }
 
             
