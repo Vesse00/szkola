@@ -34,13 +34,28 @@ class nowe {
 
             switch(figura){
                 case "prostokat":
-                    System.out.println("Podaj dlugosc bokow (a;b): ");
-                    String prost = sc.next();
+                    System.out.println("Podaj dlugosc boku a: ");
+                    int a = sc.nextInt();
 
-                    String rozmiar[] = prost.split(";");                
+                    System.out.println("Podaj dlugosc boku b: ");
+                    int b = sc.nextInt();
                     
+                    //System.out.println(a+";"+b);
+
+
+                    if(a == b){
+                        System.out.println(a+" jest takie samo jak "+b+" to nie jest prostokat");
+                    }else{
+                        for(var i = 0;i < a;i++){
+                            for(var j = 0;j < b;j++){
+                                System.out.print("*");
+                            }
+                            System.out.print("\n");
+                        }
+                    }
+
+
                     
-                    System.out.println(rozmiar[0]+" "+rozmiar[1]);
 
             }
 
